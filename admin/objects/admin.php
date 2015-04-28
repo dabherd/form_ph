@@ -6,7 +6,7 @@ class Admin {
 
 	// object properties
 	public $id;
-	public $name;
+	public $username;
 	public $password;
 	public $email;
 
@@ -24,7 +24,7 @@ class Admin {
 
 		$stmt = $this->conn->prepare($query);
 
-		$stmt->bindParam(1, $this->name);
+		$stmt->bindParam(1, $this->username);
 		$stmt->bindParam(2, $this->password);
 		$stmt->bindParam(3, $this->email);
 
@@ -34,5 +34,23 @@ class Admin {
 			return false;
 		}
 	}
+
+	// admin login
+	public function loginAdmin() {
+		// write query
+		$query = "SELECT * FROM " .$this->table_name. " WHERE 
+		a_name =? AND a_password =? ";
+		
+		$pdo = $this->conn->prepare($query);
+
+		$pdo->bindParam(1, $this->username);
+		$pdo->bindParam(2, $this->password);
+
+		$pdo->execute();
+
+		$row = $pdo->fetch(PDO::FETCH_ASSOC);
+
+		return $row;
+ 	}
 }
  ?>

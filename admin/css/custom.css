@@ -11,92 +11,129 @@
      background: #2B2E2E;
      padding: 10px 50px;
      display: flex;
-   }
-   #header-nav-mid {
-      height: 10vh;
-      width: inherit;
-      background: #313F54;
-      display: flex;
-      padding: 2px 50px;
-   }
-   #header-nav-mid section {
-      flex: 1;
-      text-align: center;
-   }
-   #header-nav-mid section span{
-      display: block;
-   }
-   #header-nav-mid section a, #header-nav-mid section a:hover  {
-      color: #fff;
-      margin-top: 2px;
-      text-decoration: none;
-   }
-   #header-nav-bottom {
-      height: 7vh;
-      width: inherit;
-      background: #363942;
-      padding: 8px 50px;
-   }
-   #header-nav-bottom a {
-      margin-left: 20px;
-   }
-   #nav-top-section-left {
-      flex: 1;
-      color: #fff;
-      width: 50%;
-   }
-   #nav-top-section-right {
-      flex: 1;
-      color: #fff;
-      width: 50%;
-   }
-   #nav-top-section-right h4 {
-      margin-right: 10px;
-   }
-    #nav-top-section-right a {
-      margin-top: -5px;
-   }
-   #body-section-main {
-      height: 60vh;
-      background: #3498db;
-      border-radius: 10px;
-      padding: 20px;
-      display: flex;
-   }
-   #section-main-article {
-      flex: 2;
-      height: 55vh;
-      background: #ecf0f1;
-      margin-right: 50px;
-      padding: 5px;
-   }
-   #section-main-aside {
-      flex: 1;
-      height: 55vh;
-      background: #ecf0f1;
-      padding: 5px;
-   }
-   #main-article-header {
-      height: 5vh;
-      border-bottom: 1px solid #bdc3c7;
-   }
-   #main-aside-header {
-      height: 5vh;
-      border-bottom: 1px solid #bdc3c7;
-   }
-  .left-margin {
-   margin: 0.5em 0 0;
-   }
-   .right-button-margin {
-      margin: 0 0 1em 0;
-      overflow: hidden;
-   }
-   .white, .white a {
-      color: #fff;
-   }
-   .blue {
+  }
+  #header-nav-mid {
+   height: 10vh;
+   width: inherit;
+   background: #313F54;
+   display: flex;
+   padding: 2px 50px;
+}
+#header-nav-mid section {
+   flex: 1;
+   text-align: center;
+}
+#header-nav-mid section span{
+   display: block;
+}
+#header-nav-mid section a, #header-nav-mid section a:hover  {
+   color: #fff;
+   margin-top: 2px;
+   text-decoration: none;
+}
+#header-nav-bottom {
+   height: 7vh;
+   width: inherit;
+   background: #363942;
+   padding: 8px 50px;
+}
+#header-nav-bottom a {
+   margin-left: 20px;
+}
+#nav-top-section-left {
+   flex: 1;
+   color: #fff;
+   width: 50%;
+}
+#nav-top-section-right {
+   flex: 1;
+   color: #fff;
+   width: 50%;
+}
+#nav-top-section-right h4 {
+   margin-right: 10px;
+}
+#nav-top-section-right a {
+   margin-top: -5px;
+}
+#body-section-main {
+   height: 60vh;
+   background: #3498db;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+}
+#section-main-article {
+   flex: 2;
+   height: 55vh;
+   background: #ecf0f1;
+   margin-right: 50px;
+   padding: 5px;
+}
+#section-main-aside {
+   flex: 1;
+   height: 55vh;
+   background: #ecf0f1;
+   padding: 5px;
+}
+#main-article-header {
+   height: 5vh;
+   border-bottom: 1px solid #bdc3c7;
+}
+#main-aside-header {
+   height: 5vh;
+   border-bottom: 1px solid #bdc3c7;
+}
+#body-section-center {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+}
+#section-center-form {
+   width: 500px;
+   height: 600px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   background: transparent;
+   transform:translate(-50%, -50%);
 
-   }
-   span.glyphicon {
-      font-size: 3em;
-   }
+}
+#header-center-form {
+   height: 15vh;
+   width: inherit;
+   text-align: center;
+}
+#div-center-form {
+   height: 40vh;
+   padding: 50px 50px;
+   border-radius: 1px;
+   box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.3);
+}
+#div-center-form input[type="text"], #div-center-form input[type="password"] {
+   display: block;
+   width: 400px;
+}
+#div-center-form input {
+   margin-top: 10px;
+}
+#footer-center-form {
+   margin-top: 10px;
+   padding: 0px 50px;
+}
+.left-margin {
+   margin: 0.5em 0 0;
+}
+.right-button-margin {
+   margin: 0 0 1em 0;
+   overflow: hidden;
+}
+.white, .white a {
+   color: #fff;
+}
+.blue {
+
+}
+span.glyphicon {
+   font-size: 3em;
+}
