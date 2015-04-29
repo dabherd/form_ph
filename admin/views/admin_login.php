@@ -59,9 +59,6 @@ if ($_POST) {
 					</div>
 				</form>
 			</div>
-			<footer id="footer-center-form">
-				<a href="#">Lost your password?</a>
-			</footer>
 		</section>
 	</section>
 </body>
